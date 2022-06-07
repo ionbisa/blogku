@@ -1,10 +1,31 @@
-.menu{
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+}
+
+.header{
+    padding: 20px
+}
+
+
+
+
+
+
+.menu_3{
     padding-bottom: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
     background-color: #0b6e8b;
 }
-.menu a{
+.menu_3 a{
     float: left;
     display: block;
     color: black;
@@ -14,9 +35,9 @@
     font-size: 15px;
     border-bottom: 3px solid transparent;
 }
-.menu a:hover{
+.menu_3 a:hover{
     border-bottom: 3px solid red;
 }
-.menu a.active{
+.menu_3 a.active{
     border-bottom: 3px solid red;
 }
