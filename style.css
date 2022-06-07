@@ -1,6 +1,7 @@
 body {
     font: 16px/28px arial, sans-serif;
     background-color: #eaeaea;
+    background-image: url(img/background.png);
     color: #333;
 }
 
@@ -8,6 +9,7 @@ body {
     width: 800px;
     margin: auto;
     background-color: white;
+    border: 3px solid lightblue;
 }
 
 .header {
@@ -61,14 +63,28 @@ body {
     font-weight: bold;
 }
 .content .penulis {
-    font-size: 13px;
-    margin-top: -2px;
+    font-size: 11px;
+    margin-top: -5px;
 }
 .content .penulis a {
     color: salmon;
+    text-decoration: none;
 
 }
 .content p {
     margin-bottom: 20px;
-    font-size: 150px;
+    font-size: 15px;
+    text-align: justify;
+    text-indent: 45px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding:10px;
+}
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
 }
