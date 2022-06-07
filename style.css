@@ -24,6 +24,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     overflow: hidden;
     background-color: #0b6e8b;
+    font-weight: bold;
 }
 .menu_3 a {
     float: left;
@@ -36,13 +37,38 @@ body {
     border-bottom: 3px solid transparent;
 }
 .menu_3 a:hover {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid salmon;
 }
 .menu_3 a.active {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid salmon;
 }
 
 .hero {
-    height: 250px;
-    background-image: url(img/hero.jpg);
+    height: 280px;
+    background-image: url(img/hero.png);
+    background-size: cover;
+    background-position: 0 -260px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightblue;
+}
+
+.content {
+    padding: 20px;
+
+}
+.content h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.content .penulis {
+    font-size: 13px;
+    margin-top: -2px;
+}
+.content .penulis a {
+    color: salmon;
+
+}
+.content p {
+    margin-bottom: 20px;
+    font-size: 150px;
 }
