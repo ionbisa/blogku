@@ -5,13 +5,65 @@ body {
     color: #333;
 }
 
-.container {
-    width: 800px;
-    margin: auto;
-    background-color: white;
-    border: 3px solid lightblue;
+/* membuat topbar atas */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: lightblue;
+    border-bottom: 3px solid salmon;
+    z-index: 9999;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
 }
 
+/* top bar icon sosmed */
+.top-bar a {
+    display: inline-block;
+    padding: 6px;
+    line-height: 1.25;
+    color: #666;
+    
+    
+}
+.top-bar a + a {
+    border-left: 1px solid #ddd;
+}
+.top-bar .ikon {
+    fill: blue;
+    width: 24px;
+    height: 24px;
+}
+.top-bar .ikon + span {
+    display:block;
+}
+
+/* pembungkus artikel */
+.container {
+    width: 960px;
+    margin: 80px auto;
+    background-color: white;
+    border: 3px solid lightblue;
+    position: relative;
+}
+
+/* membuat ribbon */
+.twitter {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/twitter-ribbon.png);
+    background-repeat: no-repat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: -25px;
+    right: -30px;
+}
+
+/* membuat header */
 .header {
     padding: 20px
 }
@@ -20,7 +72,7 @@ body {
     font-weight: bold;
 }
 
-
+/* membuat Menu */
 .menu_3 {
     padding-bottom: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -45,8 +97,9 @@ body {
     border-bottom: 3px solid salmon;
 }
 
+/* membuat image */
 .hero {
-    height: 280px;
+    height: 350px;
     background-image: url(img/hero.png);
     background-size: cover;
     background-position: 0 -260px;
@@ -54,28 +107,51 @@ body {
     border-bottom: 5px solid lightblue;
 }
 
-.content {
+/* membuat isi artikel */
+.main {
+    width: 600px;
     padding: 20px;
+    box-sizing: border-box;
+    float: left;
 
 }
-.content h2 {
+.main h2 {
     font-size: 28px;
     font-weight: bold;
 }
-.content .penulis {
+.main .penulis {
     font-size: 11px;
     margin-top: -5px;
 }
-.content .penulis a {
+.main .penulis a {
     color: salmon;
     text-decoration: none;
 
 }
-.content p {
+.main p {
     margin-bottom: 20px;
     font-size: 15px;
     text-align: justify;
-    text-indent: 45px;
+    /* text-indent: 45px; */
+}
+
+/* sidebar */
+.sidebar {
+    width: 300px;
+    float: right;
+    padding:20px;
+}
+.sidebar h3 {
+    font-weight: bold;
+    color: #666;
+}
+.sidebar img {
+    float: left;
+    padding-right: 10px;
+}
+.sidebar p {
+    font: 12px/18px arial;
+    text-align: justify;
 }
 
 /* Footer */
@@ -87,4 +163,22 @@ body {
     color: #eaeaea;
     text-align: center;
     font-size: 12px;
+}
+
+
+
+/* ini adalah clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+.cf {
+    *zoom: 1;
 }
