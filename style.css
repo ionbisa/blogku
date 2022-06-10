@@ -167,7 +167,10 @@ body {
 
 
 
-/* ini adalah clearfix */
+/* ini adalah clearfix  ( https://nicolasgallagher.com/ )
+Clearfix adalah cara praktis yang digunakan untuk clear element yang sebelumnya mengalami float. */
+
+/* ini untuk membuat top-bar berada didepan container */
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
